@@ -15,25 +15,6 @@ const routes: Routes = [
     component: ExamplesComponent,
     children: [
       {
-        path: '',
-        redirectTo: 'todos',
-        pathMatch: 'full'
-      },
-      {
-        path: 'todos',
-        component: TodosComponent,
-        data: {
-          title: 'Todos'
-        }
-      },
-      {
-        path: 'stock-market',
-        component: StockMarketComponent,
-        data: {
-          title: 'Stock Market'
-        }
-      },
-      {
         path: 'theming',
         component: ParentComponent,
         data: {
