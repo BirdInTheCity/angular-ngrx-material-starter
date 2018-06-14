@@ -8,10 +8,7 @@ import { Subject } from 'rxjs';
 import { takeUntil, filter } from 'rxjs/operators';
 
 import {
-  ActionAuthLogin,
-  ActionAuthLogout,
   AnimationsService,
-  selectorAuth,
   routeAnimations
 } from '@app/core';
 import { environment as env } from '@env/environment';
@@ -79,18 +76,18 @@ export class AppComponent implements OnInit, OnDestroy {
   }
 
   onLoginClick() {
-    this.store.dispatch(new ActionAuthLogin());
+    // this.store.dispatch(new ActionAuthLogin());
   }
 
   onLogoutClick() {
-    this.store.dispatch(new ActionAuthLogout());
+    // this.store.dispatch(new ActionAuthLogout());
   }
 
   private subscribeToIsAuthenticated() {
-    this.store
-      .select(selectorAuth)
-      .pipe(takeUntil(this.unsubscribe$))
-      .subscribe(auth => (this.isAuthenticated = auth.isAuthenticated));
+    // this.store
+    //  .select(selectorAuth)
+    //  .pipe(takeUntil(this.unsubscribe$))
+    //  .subscribe(auth => (this.isAuthenticated = auth.isAuthenticated));
   }
 
   private subscribeToSettings() {

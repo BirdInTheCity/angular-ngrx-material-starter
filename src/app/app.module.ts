@@ -5,13 +5,14 @@ import { NgModule } from '@angular/core';
 import { SharedModule } from '@app/shared';
 import { CoreModule } from '@app/core';
 
+import { LoginModule } from './login';
 import { SettingsModule } from './settings';
 import { StaticModule } from './static';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
-import { environment } from '../environments/environment';
+import { environment } from '@env/environment';
 
 import { AngularFireModule } from 'angularfire2';
 import { AngularFireStorageModule } from 'angularfire2/storage';
@@ -38,6 +39,7 @@ import { AngularFirestoreModule } from 'angularfire2/firestore';
     // features
     StaticModule,
     SettingsModule,
+    LoginModule,
 
     // app
     AppRoutingModule

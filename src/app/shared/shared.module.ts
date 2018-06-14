@@ -21,11 +21,13 @@ import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 
 import { BigInputComponent } from './big-input/big-input.component';
 import { BigInputActionComponent } from './big-input/big-input-action.component';
+import { FlexLayoutModule } from '@angular/flex-layout';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
+    FlexLayoutModule,
 
     MatButtonModule,
     MatToolbarModule,
@@ -48,6 +50,7 @@ import { BigInputActionComponent } from './big-input/big-input-action.component'
   exports: [
     CommonModule,
     FormsModule,
+    FlexLayoutModule,
 
     MatButtonModule,
     MatMenuModule,

@@ -1,0 +1,28 @@
+:host {
+  width: 100%;
+}
+
+.login-card {
+  max-width: 360px;
+  margin: 40px;
+  min-height: 350px;
+  width: 90%;
+
+}
+
+.login-card > * {
+  width: 100%;
+}
+
+.login-btn {
+  height: 60px;
+  width: 100%;
+}
+
+.login-warn {
+  // color: md-color($aloha-warn, 500);
+  font-size: 14px;
+  text-align: center;
+}
+
+
