@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'anms-authenticated',
+  selector: 'bl-authenticated',
   templateUrl: './authenticated.component.html',
   styleUrls: ['./authenticated.component.scss']
 })

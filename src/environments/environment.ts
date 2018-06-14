@@ -8,6 +8,14 @@ const packageJson = require('../../package.json');
 export const environment = {
   appName: 'Angular Ngrx Material Starter',
   envName: 'DEV',
+  firebase: {
+    apiKey: 'AIzaSyDSIdeefZPbx-eflbME2SMMZFwEljT4P_k',
+    databaseURL: 'https://bl-toolkit.firebaseio.com',
+    storageBucket: 'bl-toolkit.appspot.com',
+    authDomain: 'bl-toolkit.firebaseapp.com',
+    messagingSenderId: '498445371323',
+    projectId: 'bl-toolkit'
+  },
   production: false,
   test: false,
   versions: {

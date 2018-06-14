@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
-import { AuthGuardService } from '@app/core';
+import { AuthGuard } from '@app/core';
 
 import { ExamplesComponent } from './examples/examples.component';
 import { TodosComponent } from './todos/todos.component';
@@ -43,7 +43,7 @@ const routes: Routes = [
       {
         path: 'authenticated',
         component: AuthenticatedComponent,
-        canActivate: [AuthGuardService],
+        canActivate: [AuthGuard],
         data: {
           title: 'Authenticated'
         }

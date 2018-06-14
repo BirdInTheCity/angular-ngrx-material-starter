@@ -18,7 +18,7 @@ import {
 } from './todos.reducer';
 
 @Component({
-  selector: 'anms-todos',
+  selector: 'bl-todos',
   templateUrl: './todos.component.html',
   styleUrls: ['./todos.component.scss']
 })

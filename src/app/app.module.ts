@@ -11,11 +11,25 @@ import { StaticModule } from './static';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
+import { environment } from '../environments/environment';
+
+import { AngularFireModule } from 'angularfire2';
+import { AngularFireStorageModule } from 'angularfire2/storage';
+import { AngularFireAuthModule } from 'angularfire2/auth';
+import { AngularFirestoreModule } from 'angularfire2/firestore';
+
 @NgModule({
   imports: [
     // angular
     BrowserAnimationsModule,
     BrowserModule,
+
+    // firebase
+    AngularFireModule.initializeApp(environment.firebase, 'bl-toolkit'),
+    AngularFirestoreModule,
+    AngularFireStorageModule,
+    AngularFireAuthModule,
+    AngularFireStorageModule,
 
     // core & shared
     CoreModule,

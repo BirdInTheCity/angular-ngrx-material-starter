@@ -1,6 +1,6 @@
 {
-  "name": "angular-ngrx-material-starter",
-  "version": "6.3.0",
+  "name": "bl-tookit",
+  "version": "0.0.1",
   "license": "MIT",
   "scripts": {
     "ng": "ng",
@@ -36,9 +36,11 @@
     "@fortawesome/fontawesome-free-webfonts": "^1.0.9",
     "@ngrx/effects": "^6.0.0-beta.1",
     "@ngrx/store": "^6.0.0-beta.1",
+    "angularfire2": "^5.0.0-rc.10",
     "bootstrap": "^4.0.0",
     "browser-detect": "^0.2.27",
     "core-js": "^2.4.1",
+    "firebase": "^5.0.4",
     "rxjs": "^6.0.0",
     "uuid": "^3.1.0",
     "web-animations-js": "^2.2.5",
